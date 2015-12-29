@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hXp-Ey-z7t">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -47,11 +47,13 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ZJx-Xy-9Tf">
                                 <rect key="frame" x="26" y="373" width="274" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88406934678764448" green="0.97705379079613919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <segments>
                                     <segment title="18%"/>
                                     <segment title="20%"/>
                                     <segment title="22%"/>
                                 </segments>
+                                <color key="tintColor" red="0.22048001334187228" green="0.32737558115948007" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="beF-wV-gfP"/>
                                 </connections>
@@ -59,7 +61,7 @@
                             <view contentMode="scaleToFill" id="wSA-Eb-uwD">
                                 <rect key="frame" x="20" y="263" width="280" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.48843390701580303" green="0.74137227310543696" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.95081300546285319" blue="0.80552096770830839" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xkh-76-wIN">
                                 <rect key="frame" x="26" y="94" width="135" height="58"/>
@@ -83,6 +85,13 @@
                             <outletCollection property="gestureRecognizers" destination="kdj-oA-2bo" appends="YES" id="UXE-eP-0Ip"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="2Cq-pO-ocG">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="mVf-pE-wri">
+                            <connections>
+                                <segue destination="yFJ-Ch-1xX" kind="push" id="0Sz-2g-qzo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="amountText" destination="9nf-ui-wuL" id="ebw-5Z-Vj2"/>
                         <outlet property="tipControl" destination="ZJx-Xy-9Tf" id="m0m-Vg-DLx"/>
@@ -96,6 +105,39 @@
                         <action selector="onTap:" destination="BYZ-38-t0r" id="obV-3a-z2p"/>
                     </connections>
                 </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="662" y="304"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="FAS-Te-Han">
+            <objects>
+                <viewController id="yFJ-Ch-1xX" customClass="SettingsViewController" customModule="Tips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kNz-mk-3Wu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ge9-AG-6Ns"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fnm-T0-yGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IeE-m9-wep">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hXp-Ey-z7t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jW7-cJ-ee3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e1I-p9-dF9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJS-hH-G6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130" y="304"/>
         </scene>

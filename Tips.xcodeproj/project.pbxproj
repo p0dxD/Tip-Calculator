@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBA4B1141C33194D00AF7608 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA4B1131C33194D00AF7608 /* SettingsViewController.swift */; };
 		FBAAEEDE1C32F24E00F94B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAAEEDD1C32F24E00F94B3F /* AppDelegate.swift */; };
 		FBAAEEE01C32F24E00F94B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAAEEDF1C32F24E00F94B3F /* ViewController.swift */; };
 		FBAAEEE31C32F24E00F94B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAAEEE11C32F24E00F94B3F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FBA4B1131C33194D00AF7608 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FBAAEEDA1C32F24E00F94B3F /* Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAAEEDD1C32F24E00F94B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBAAEEDF1C32F24E00F94B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				FBAAEEDD1C32F24E00F94B3F /* AppDelegate.swift */,
 				FBAAEEDF1C32F24E00F94B3F /* ViewController.swift */,
 				FBAAEEE11C32F24E00F94B3F /* Main.storyboard */,
+				FBA4B1131C33194D00AF7608 /* SettingsViewController.swift */,
 				FBAAEEE41C32F24E00F94B3F /* Assets.xcassets */,
 				FBAAEEE61C32F24E00F94B3F /* LaunchScreen.storyboard */,
 				FBAAEEE91C32F24E00F94B3F /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				FBAAEEE01C32F24E00F94B3F /* ViewController.swift in Sources */,
 				FBAAEEDE1C32F24E00F94B3F /* AppDelegate.swift in Sources */,
+				FBA4B1141C33194D00AF7608 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				FBAAEEEE1C32F24E00F94B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
