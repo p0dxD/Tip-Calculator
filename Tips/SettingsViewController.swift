@@ -9,11 +9,11 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
+    var test: ViewController!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Tip Settings"
+        //self.title = "Tip Settings"
         // Do any additional setup after loading the view.
     }
 
@@ -22,19 +22,44 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidDisappear(animated: Bool) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let defaultTipIndex = tipControl.selectedSegmentIndex
-        defaults.setInteger(defaultTipIndex, forKey: "default_tip_index")
-        defaults.synchronize()
-        print("selected tip at index \(tipControl.selectedSegmentIndex)")
+
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        if (segue.identifier == "testId") {
+//            var svc = segue.destinationViewController as! ViewController;
+//            svc.number = 1
+//        }
+//    }
+    
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        let defaults = NSUserDefaults.standardUserDefaults()
+//        let defaultTipIndex = defaults.integerForKey("default_tip_index")
+//        tipControl.selectedSegmentIndex = defaultTipIndex
+//    }
+    override func viewWillDisappear(animated: Bool) {
+
+
     }
     
-    @IBAction func twentyAction(sender: AnyObject) {
+    @IBAction func twentyAction(sender: AnyObject)
+    {
         let defaults = NSUserDefaults.standardUserDefaults()
-        print("test")
+        defaults.setInteger(1, forKey: "default_tip_index")
+        defaults.synchronize()
+
     }
 
+    @IBAction func eightteenAction(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(0, forKey: "default_tip_index")
+        defaults.synchronize()
+    }
+
+    @IBAction func twentyTwoAction(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(2, forKey: "default_tip_index")
+        defaults.synchronize()
+    }
     /*
     // MARK: - Navigation
 

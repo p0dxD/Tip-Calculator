@@ -106,7 +106,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="662" y="304"/>
+            <point key="canvasLocation" x="582" y="360"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="FAS-Te-Han">
@@ -121,12 +121,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="18%"/>
+                                <connections>
+                                    <action selector="eightteenAction:" destination="yFJ-Ch-1xX" eventType="touchUpInside" id="ON4-bi-W9R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="riu-0e-Psx">
                                 <rect key="frame" x="151" y="341" width="58" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="22%"/>
+                                <connections>
+                                    <action selector="twentyTwoAction:" destination="yFJ-Ch-1xX" eventType="touchUpInside" id="VqB-3e-CmS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set  initial percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="djp-Ea-WNw">
                                 <rect key="frame" x="20" y="97" width="166" height="21"/>
@@ -151,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fnm-T0-yGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="297"/>
+            <point key="canvasLocation" x="1127" y="404"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IeE-m9-wep">
