@@ -27,7 +27,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    override func viewDidDisappear(animated: Bool) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaultTipIndex = tipControl.selectedSegmentIndex
+        defaults.setInteger(defaultTipIndex, forKey: "default_tip_index")
+        defaults.synchronize()
+        print("selected tip at index \(tipControl.selectedSegmentIndex)")
+    }
+    override func viewWillAppear(animated: Bool) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaultTipIndex = defaults.integerForKey("default_tip_index")
+        tipControl.selectedSegmentIndex = defaultTipIndex
+    }
     
     @IBAction func onEditingChanged(sender: AnyObject) {
         var tipAmounts = [0.18, 0.2, 0.22]
@@ -44,6 +55,10 @@ class ViewController: UIViewController {
     
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
+    }
+    
+    func getTipControl() -> UISegmentedControl{
+        return tipControl
     }
     
 }
